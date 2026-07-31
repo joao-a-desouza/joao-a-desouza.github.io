@@ -114,7 +114,7 @@ h4 {
 }
 
 h1 {
-  font-size: clamp(44px, 5.2vw, 68px);
+  font-size: clamp(38px, 4.4vw, 58px);
   letter-spacing: -0.035em;
   margin-bottom: 24px;
   max-width: 800px;
@@ -166,35 +166,18 @@ h1 {
   transform: translateY(-1px);
 }
 
-.hero-card {
+.headshot {
+  justify-self: end;
+  margin: 0;
+  width: min(100%, 300px);
+}
+
+.headshot img {
   aspect-ratio: 4 / 5;
-  background: var(--green);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: clamp(28px, 4vw, 52px);
-  position: relative;
-}
-
-.hero-card::after {
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  content: "";
-  inset: 18px;
-  pointer-events: none;
-  position: absolute;
-}
-
-.monogram {
-  color: rgba(255, 255, 255, 0.13);
-  font-family: var(--serif);
-  font-size: clamp(86px, 10vw, 150px);
-  letter-spacing: -0.08em;
-  line-height: 1;
-}
-
-.hero-card p {
-  margin: 2px 0;
+  display: block;
+  object-fit: cover;
+  object-position: 50% 40%;
+  width: 100%;
 }
 
 .section {
@@ -471,9 +454,10 @@ footer a {
     padding: 60px 22px 90px;
   }
 
-  .hero-card {
-    aspect-ratio: 16 / 9;
+  .headshot {
+    justify-self: start;
     max-width: 520px;
+    width: min(76vw, 300px);
   }
 
   .section {
@@ -521,7 +505,7 @@ footer a {
   }
 
   h1 {
-    font-size: 44px;
+    font-size: 38px;
   }
 
   .hero {
