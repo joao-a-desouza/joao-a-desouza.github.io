@@ -1,9 +1,9 @@
 :root {
   --ink: #17201d;
   --muted: #5d6863;
-  --paper: #f6f3ed;
-  --white: #fffdf9;
-  --line: #d9d5cc;
+  --paper: #e8eae7;
+  --white: #f0f1ee;
+  --line: #c9cdc8;
   --green: #1f4d3d;
   --green-light: #dfe8e2;
   --rust: #a84d2d;
@@ -252,7 +252,7 @@ h1 {
 }
 
 .publication-card {
-  background: #f6f3ed;
+  background: #e3e6e2;
   border-top: 3px solid var(--green);
   display: flex;
   flex-direction: column;
